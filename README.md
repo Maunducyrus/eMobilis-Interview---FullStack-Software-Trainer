@@ -1,22 +1,32 @@
+```bash
 python -m venv venv
+
 .\venv\Scripts\activate
+
 pip install django
+
 django-admin startproject school
+
 cd school
+
 python manage.py startapp students
 
 
 pip install djangorestframework
+
 python manage.py makemigrations
+
 python manage.py migrate
 
 
 endpoints
-# http://127.0.0.1:8000/api/students/ - GET
-# http://127.0.0.1:8000/api/students/1/ GET-ONE
-# http://127.0.0.1:8000/api/students/ - POST
-# http://127.0.0.1:8000/api/students/1/ - PUT
-# http://127.0.0.1:8000/api/students/1/ - DELETE
+
+# http://127.0.0.1:8000/api/students/      - GET (List all students)
+# http://127.0.0.1:8000/api/students/1/    - GET (Retrieve one student)
+# http://127.0.0.1:8000/api/students/      - POST (Create a new student)
+# http://127.0.0.1:8000/api/students/1/    - PUT (Update a student)
+# http://127.0.0.1:8000/api/students/1/    - DELETE (Delete a student)
+
 
 
 @api_view decorator - It turns a regular Django function into an API view. It ensures the function can handle specific HTTP methods (like GET or POST)
