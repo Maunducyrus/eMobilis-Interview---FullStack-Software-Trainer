@@ -12,11 +12,11 @@ python manage.py migrate
 
 
 endpoints
-http://127.0.0.1:8000/api/students/ - GET
-http://127.0.0.1:8000/api/students/1/ GET-ONE
-http://127.0.0.1:8000/api/students/ - POST
-http://127.0.0.1:8000/api/students/1/ - PUT
-http://127.0.0.1:8000/api/students/1/ - DELETE
+# http://127.0.0.1:8000/api/students/ - GET
+# http://127.0.0.1:8000/api/students/1/ GET-ONE
+# http://127.0.0.1:8000/api/students/ - POST
+# http://127.0.0.1:8000/api/students/1/ - PUT
+# http://127.0.0.1:8000/api/students/1/ - DELETE
 
 
 @api_view decorator - It turns a regular Django function into an API view. It ensures the function can handle specific HTTP methods (like GET or POST)
