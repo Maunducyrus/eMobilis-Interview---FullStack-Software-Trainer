@@ -46,16 +46,6 @@ def student_ui_list(request):
     students = Student.objects.all()
     return render(request, 'students/list.html', {'students': students})
 
-# def add_student_ui(request):
-#     if request.method == 'POST':
-#         name = request.POST['name']
-#         email = request.POST['email']
-#         course = request.POST['course']
-#         Student.objects.create(name=name, email=email, course=course)
-#         return redirect('student_ui_list')
-
-#     return render(request, 'students/add.html')
-
 def add_student_ui(request):
     if request.method == 'POST':
         Student.objects.create(
